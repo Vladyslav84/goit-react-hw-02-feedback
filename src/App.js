@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Button from './components/Button/Button';
 import Statistics from './components/Statistics/Statistics '
 import Notification from './components/Notification/Notification'
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions '
@@ -20,31 +19,6 @@ class App extends Component {
         })
 
     }
-    handleGoodfeedback = () => {
-        this.setState(prevState => {
-
-            return {
-                Good: prevState.Good + 1
-            }
-        })
-    }
-
-    handleNeutralfeedback = () => {
-        this.setState(prevState => {
-
-            return {
-                Neutral: prevState.Neutral + 1
-            }
-        })
-    }
-    handleBadfeedback = () => {
-        this.setState(prevState => {
-
-            return {
-                Bad: prevState.Bad + 1
-            }
-        })
-    };
 
     countTotalFeedback = () => {
         let total = this.state.Neutral + this.state.Bad + this.state.Good;
