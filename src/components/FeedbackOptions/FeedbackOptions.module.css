@@ -1,0 +1,13 @@
+
+.button{
+    border-color: aquamarine;
+    cursor: pointer;
+
+}
+.Statlist{
+    display: inline-flex;
+    list-style: none;
+}
+.StatlistItem:not(:last-child){
+    margin-right: 10px;
+}
